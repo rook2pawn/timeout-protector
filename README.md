@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rook2pawn/timeout-protector.svg?branch=master)](https://travis-ci.org/rook2pawn/timeout-protector)
+
 timeout-protector
 =================
 
