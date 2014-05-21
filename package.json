@@ -1,0 +1,28 @@
+{
+  "name": "timeout-protector",
+  "version": "0.0.1",
+  "description": "provides timeout protection on your async callbacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/tape/bin/tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rook2pawn/timeout-protector.git"
+  },
+  "keywords": [
+    "timeout",
+    "async",
+    "callback",
+    "protection"
+  ],
+  "author": "David Wee <rook2pawn@gmail.com> (http://rook2pawn.com)",
+  "license": "MIT/X11",
+  "bugs": {
+    "url": "https://github.com/rook2pawn/timeout-protector/issues"
+  },
+  "homepage": "https://github.com/rook2pawn/timeout-protector",
+  "devDependencies": {
+    "tape": "^2.13.1"
+  }
+}
