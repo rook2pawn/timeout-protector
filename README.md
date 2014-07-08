@@ -5,6 +5,31 @@ timeout-protector
 
 Provides a straight forward timeout-protection for any asynchronous callback.
 
+What this means is you should slightly modify your callback to accept a "timeout" response. e.g.
+
+Suppose i wanted to protect 
+
+    var mycb = function(resp) {
+        // do something with resp
+    }
+
+
+Now you should modify your callback to do this instead
+
+
+    var mycb = function(resp) {
+        if (resp == 'timeout') {
+            // handle timeout
+        } else {
+            // do something with resp
+        }
+    }
+
+    protector(mycb, 3000, 'timeout')
+
+
+    So now wherever you would call mycb, instead you call protector(mycb, 3000, 'timeout').
+
 
 Example
 =======
